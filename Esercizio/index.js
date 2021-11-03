@@ -12,17 +12,13 @@ const render = (container, items) => {
                 return `<li>
                 <label for="search">  ${element.title} <input type="checkbox" checked /></label>
                 </li>`
-
-
             } else {
                 return `<li>
                 <label for="search">  ${element.title} <input type="checkbox"/></label>
                 </li>`
-
             }
         }
     );
     const output = elements.join(" ");
-
     container.innerHTML = output;
 };
